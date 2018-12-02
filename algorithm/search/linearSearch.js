@@ -27,10 +27,10 @@ while(x < 100) {
 
 rl.question('Input the value what you want find ', (answer) => {
   let result = linearSearch(target, answer);
-  if(result === undefined) {
+  if(result === false) {
     console.log("Key does not exist");
   } else {
-    console.log("Key found, index is " + linearSearch(target, Number(answer)));
+    console.log("Key found, index is " + result);
   }
 
   rl.close();
